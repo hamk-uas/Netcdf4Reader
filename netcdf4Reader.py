@@ -31,3 +31,11 @@ def get_data(measurand, year):
     except Exception as e:
         print(f"Error: {e}")
         return None
+
+def describe_data(data):
+    #describing data
+    print(data)
+    #describing data variable
+    print(data[measurand.capitalize()])
+    #looking at units
+    print(data[measurand.capitalize()].attrs["units"])
